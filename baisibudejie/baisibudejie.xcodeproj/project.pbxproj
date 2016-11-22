@@ -237,6 +237,10 @@
 		460FAA781DE2DDD000AB4CF9 /* BDJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460FAA771DE2DDD000AB4CF9 /* BDJTabBar.m */; };
 		460FAA7C1DE2DF2500AB4CF9 /* UIButton+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 460FAA7B1DE2DF2500AB4CF9 /* UIButton+Util.m */; };
 		460FAA841DE2E81400AB4CF9 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 460FAA831DE2E81400AB4CF9 /* UIView+Util.m */; };
+		461E9FE51DE41910006FEAD7 /* BDJDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FE41DE41910006FEAD7 /* BDJDownloader.m */; };
+		461E9FE81DE41F53006FEAD7 /* BDJEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FE71DE41F53006FEAD7 /* BDJEssenceModel.m */; };
+		461E9FEC1DE4346E006FEAD7 /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */; };
+		461E9FED1DE4346E006FEAD7 /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */; };
 		5A80A4B28E499988DAFAC109 /* Pods_baisibudejie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665DF5B9A39C1B5B822D97AF /* Pods_baisibudejie.framework */; };
 /* End PBXBuildFile section */
 
@@ -508,6 +512,13 @@
 		460FAA7E1DE2E61800AB4CF9 /* BDJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJConst.h; sourceTree = "<group>"; };
 		460FAA821DE2E81400AB4CF9 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		460FAA831DE2E81400AB4CF9 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		461E9FE31DE41910006FEAD7 /* BDJDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJDownloader.h; sourceTree = "<group>"; };
+		461E9FE41DE41910006FEAD7 /* BDJDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJDownloader.m; sourceTree = "<group>"; };
+		461E9FE61DE41F53006FEAD7 /* BDJEssenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDJEssenceModel.h; path = "baisibudejie/classes/Common(公共类)/BDJEssenceModel.h"; sourceTree = SOURCE_ROOT; };
+		461E9FE71DE41F53006FEAD7 /* BDJEssenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDJEssenceModel.m; path = "baisibudejie/classes/Common(公共类)/BDJEssenceModel.m"; sourceTree = SOURCE_ROOT; };
+		461E9FE91DE4346E006FEAD7 /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceVideoCell.h; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.h"; sourceTree = SOURCE_ROOT; };
+		461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceVideoCell.m; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.m"; sourceTree = SOURCE_ROOT; };
+		461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EssenceVideoCell.xib; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.xib"; sourceTree = SOURCE_ROOT; };
 		665DF5B9A39C1B5B822D97AF /* Pods_baisibudejie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baisibudejie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA50D645F47C39AA7999E97C /* Pods-baisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 		BE537D5DA1CD608C93FFC384 /* Pods-baisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie.release.xcconfig"; sourceTree = "<group>"; };
@@ -696,6 +707,8 @@
 				460FAA771DE2DDD000AB4CF9 /* BDJTabBar.m */,
 				460FAA7D1DE2E1C500AB4CF9 /* PrefixHeader.pch */,
 				460FAA7E1DE2E61800AB4CF9 /* BDJConst.h */,
+				461E9FE31DE41910006FEAD7 /* BDJDownloader.h */,
+				461E9FE41DE41910006FEAD7 /* BDJDownloader.m */,
 			);
 			path = "Common(公共类)";
 			sourceTree = "<group>";
@@ -722,6 +735,8 @@
 		460FA6A01DE2C9BC00AB4CF9 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				461E9FE61DE41F53006FEAD7 /* BDJEssenceModel.h */,
+				461E9FE71DE41F53006FEAD7 /* BDJEssenceModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -729,6 +744,9 @@
 		460FA6A11DE2C9BC00AB4CF9 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				461E9FE91DE4346E006FEAD7 /* EssenceVideoCell.h */,
+				461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */,
+				461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1314,6 +1332,7 @@
 				460FA9AF1DE2D60000AB4CF9 /* defaultUserIcon.png in Resources */,
 				460FAA4F1DE2D60000AB4CF9 /* tabBar_me_click_icon.png in Resources */,
 				460FAA511DE2D60000AB4CF9 /* tabBar_me_click_icon@3x.png in Resources */,
+				461E9FED1DE4346E006FEAD7 /* EssenceVideoCell.xib in Resources */,
 				460FA98E1DE2D60000AB4CF9 /* AppIcon29x29@2x.png in Resources */,
 				460FA9C41DE2D60000AB4CF9 /* mainCellShare@2x.png in Resources */,
 				460FAA381DE2D60000AB4CF9 /* pushguidebot.png in Resources */,
@@ -1504,13 +1523,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				460FAA781DE2DDD000AB4CF9 /* BDJTabBar.m in Sources */,
+				461E9FE81DE41F53006FEAD7 /* BDJEssenceModel.m in Sources */,
 				460FAA841DE2E81400AB4CF9 /* UIView+Util.m in Sources */,
 				460FAA7C1DE2DF2500AB4CF9 /* UIButton+Util.m in Sources */,
 				460FA6691DE2C7A500AB4CF9 /* ViewController.m in Sources */,
 				460FAA721DE2D71400AB4CF9 /* BaseViewController.m in Sources */,
 				460FAA691DE2D6DC00AB4CF9 /* EssenceViewController.m in Sources */,
 				460FAA6F1DE2D70A00AB4CF9 /* ProfileViewController.m in Sources */,
+				461E9FE51DE41910006FEAD7 /* BDJDownloader.m in Sources */,
 				460FA6661DE2C7A500AB4CF9 /* AppDelegate.m in Sources */,
+				461E9FEC1DE4346E006FEAD7 /* EssenceVideoCell.m in Sources */,
 				460FAA631DE2D6B100AB4CF9 /* AddViewController.m in Sources */,
 				460FAA661DE2D6C500AB4CF9 /* AttentionViewController.m in Sources */,
 				460FA6631DE2C7A500AB4CF9 /* main.m in Sources */,
