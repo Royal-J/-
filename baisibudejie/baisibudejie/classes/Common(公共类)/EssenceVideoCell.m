@@ -111,6 +111,22 @@
     if (detailModel.top_comments.count > 0) {
         BDJEssenceComment *comment = [detailModel.top_comments firstObject];
         self.commentLabel.text = comment.content;
+    }else{
+        self.commentLabel.text = nil;
+    }
+    
+    //强制cell布局一次
+    [self layoutIfNeeded];
+    
+    
+    if (detailModel.top_comments.count > 0) {
+        self.commentViewYCons.constant = 10;
+        self.commentViewHCons.constant = self.commentLabel.frame.size.height + 10 + 10;
+    }else{
+        //没有评论的部分
+        
+        self.commentViewHCons.constant = 0;
+        self.commentViewYCons.constant = 0;
     }
     
     //标签
@@ -127,6 +143,11 @@
     [self.shareButton setTitle:[detailModel.forward stringValue] forState:(UIControlStateNormal)];
     [self.commentButton setTitle:detailModel.comment forState:(UIControlStateNormal)];
 
+    //强制刷新一次
+    [self layoutIfNeeded];
+    
+    //获取cell的高度
+    detailModel.cellHeight = @(CGRectGetMaxY(self.dingButton.frame) + 10 + 10);
 }
 
 

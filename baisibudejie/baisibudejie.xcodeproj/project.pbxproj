@@ -241,6 +241,9 @@
 		461E9FE81DE41F53006FEAD7 /* BDJEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FE71DE41F53006FEAD7 /* BDJEssenceModel.m */; };
 		461E9FEC1DE4346E006FEAD7 /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */; };
 		461E9FED1DE4346E006FEAD7 /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */; };
+		4685B3651DE57A230091C513 /* BDJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685B3641DE57A230091C513 /* BDJMenu.m */; };
+		4685B3681DE586610091C513 /* BDJMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685B3671DE586610091C513 /* BDJMenuViewController.m */; };
+		4685B36B1DE5882C0091C513 /* BDJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685B36A1DE5882C0091C513 /* BDJTableViewController.m */; };
 		5A80A4B28E499988DAFAC109 /* Pods_baisibudejie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665DF5B9A39C1B5B822D97AF /* Pods_baisibudejie.framework */; };
 /* End PBXBuildFile section */
 
@@ -519,6 +522,12 @@
 		461E9FE91DE4346E006FEAD7 /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceVideoCell.h; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.h"; sourceTree = SOURCE_ROOT; };
 		461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceVideoCell.m; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.m"; sourceTree = SOURCE_ROOT; };
 		461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EssenceVideoCell.xib; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.xib"; sourceTree = SOURCE_ROOT; };
+		4685B3631DE57A230091C513 /* BDJMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDJMenu.h; path = "baisibudejie/classes/Essense(精华)/BDJMenu.h"; sourceTree = SOURCE_ROOT; };
+		4685B3641DE57A230091C513 /* BDJMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDJMenu.m; path = "baisibudejie/classes/Essense(精华)/BDJMenu.m"; sourceTree = SOURCE_ROOT; };
+		4685B3661DE586610091C513 /* BDJMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDJMenuViewController.h; path = "baisibudejie/classes/Essense(精华)/BDJMenuViewController.h"; sourceTree = SOURCE_ROOT; };
+		4685B3671DE586610091C513 /* BDJMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDJMenuViewController.m; path = "baisibudejie/classes/Essense(精华)/BDJMenuViewController.m"; sourceTree = SOURCE_ROOT; };
+		4685B3691DE5882C0091C513 /* BDJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDJTableViewController.h; path = "baisibudejie/classes/Essense(精华)/BDJTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		4685B36A1DE5882C0091C513 /* BDJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDJTableViewController.m; path = "baisibudejie/classes/Essense(精华)/BDJTableViewController.m"; sourceTree = SOURCE_ROOT; };
 		665DF5B9A39C1B5B822D97AF /* Pods_baisibudejie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baisibudejie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA50D645F47C39AA7999E97C /* Pods-baisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 		BE537D5DA1CD608C93FFC384 /* Pods-baisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie.release.xcconfig"; sourceTree = "<group>"; };
@@ -728,6 +737,10 @@
 			children = (
 				460FAA671DE2D6DC00AB4CF9 /* EssenceViewController.h */,
 				460FAA681DE2D6DC00AB4CF9 /* EssenceViewController.m */,
+				4685B3661DE586610091C513 /* BDJMenuViewController.h */,
+				4685B3671DE586610091C513 /* BDJMenuViewController.m */,
+				4685B3691DE5882C0091C513 /* BDJTableViewController.h */,
+				4685B36A1DE5882C0091C513 /* BDJTableViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -737,6 +750,8 @@
 			children = (
 				461E9FE61DE41F53006FEAD7 /* BDJEssenceModel.h */,
 				461E9FE71DE41F53006FEAD7 /* BDJEssenceModel.m */,
+				4685B3631DE57A230091C513 /* BDJMenu.h */,
+				4685B3641DE57A230091C513 /* BDJMenu.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1526,12 +1541,15 @@
 				461E9FE81DE41F53006FEAD7 /* BDJEssenceModel.m in Sources */,
 				460FAA841DE2E81400AB4CF9 /* UIView+Util.m in Sources */,
 				460FAA7C1DE2DF2500AB4CF9 /* UIButton+Util.m in Sources */,
+				4685B3681DE586610091C513 /* BDJMenuViewController.m in Sources */,
 				460FA6691DE2C7A500AB4CF9 /* ViewController.m in Sources */,
 				460FAA721DE2D71400AB4CF9 /* BaseViewController.m in Sources */,
 				460FAA691DE2D6DC00AB4CF9 /* EssenceViewController.m in Sources */,
 				460FAA6F1DE2D70A00AB4CF9 /* ProfileViewController.m in Sources */,
+				4685B36B1DE5882C0091C513 /* BDJTableViewController.m in Sources */,
 				461E9FE51DE41910006FEAD7 /* BDJDownloader.m in Sources */,
 				460FA6661DE2C7A500AB4CF9 /* AppDelegate.m in Sources */,
+				4685B3651DE57A230091C513 /* BDJMenu.m in Sources */,
 				461E9FEC1DE4346E006FEAD7 /* EssenceVideoCell.m in Sources */,
 				460FAA631DE2D6B100AB4CF9 /* AddViewController.m in Sources */,
 				460FAA661DE2D6C500AB4CF9 /* AttentionViewController.m in Sources */,

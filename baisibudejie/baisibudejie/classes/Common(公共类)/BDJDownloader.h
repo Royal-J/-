@@ -17,8 +17,7 @@ typedef void(^FAIL_BLOCK)(NSError *error);
 + (void)downloadWithURLString:(NSString *)urlString success:(void(^)(NSData *data))finishBlock fail:(void(^)(NSError *error))failBlock;
 
 //参数名可以省略，下面这么写也可以
-
-
+//+ (void)downloadWithURLString:(NSString *)urlString success:(void(^)(NSData *))finishBlock fail:(void(^)(NSError *))failBlock;
 
 
 //也可以这么写
