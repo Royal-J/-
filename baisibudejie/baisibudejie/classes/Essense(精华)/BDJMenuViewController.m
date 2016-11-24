@@ -9,14 +9,21 @@
 #import "BDJMenuViewController.h"
 #import "BDJTableViewController.h"
 #import "BDJMenu.h"
+#import "BDJMenuView.h"
 
-@interface BDJMenuViewController ()<UIPageViewControllerDelegate, UIPageViewControllerDataSource>
+@interface BDJMenuViewController ()<UIPageViewControllerDelegate, UIPageViewControllerDataSource, BDJMenuViewDelegate>
 
 //使视图控制器的数组
 @property (nonatomic, strong)NSMutableArray *ctrlArray;
 
+//当前显示的视图控制器的序号
+@property (nonatomic, assign)NSInteger curPageIndex;
+
 //分页视图控制器
 @property (nonatomic, strong)UIPageViewController *pageCtrl;
+
+//菜单视图
+@property (nonatomic, strong)BDJMenuView *menuView;
 
 @end
 
@@ -44,6 +51,30 @@
     
     //创建分页控制器
     [self createPageCtrl];
+    
+    
+    //创建导航
+    [self createMenu];
+    
+}
+
+//创建导航
+- (void)createMenu {
+    BDJMenuView *menuView = [[BDJMenuView alloc] initWithItems:self.subMenus rightIcon:self.righrImageName rightSelectIcon:self.righrHLImageName];
+    self.menuView = menuView;
+    //设置frame也可以
+//    menuView.frame = CGRectMake(0, 0, kscreenWidth, 44);
+    menuView.delegate = self;
+    self.navigationItem.titleView = menuView;
+    
+    //约束
+    
+    [menuView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.navigationController.view);
+        make.top.equalTo(self.navigationController.view).offset(20);
+        make.height.mas_equalTo(44);
+    }];
+    
 }
 
 //创建分页控制器
@@ -106,6 +137,43 @@
     }else{
         return self.ctrlArray[curIndex - 1];
     }
+}
+
+//手动滑动pageViewController，切换结束时调用
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
+    
+    self.menuView.selectIndex = self.curPageIndex;
+    
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers {
+    
+    //获取将要滑到的界面的序号
+    UIViewController *toCtrl = [pendingViewControllers lastObject];
+    NSInteger index = [self.ctrlArray indexOfObject:toCtrl];
+    
+    self.curPageIndex = index;
+}
+
+
+#pragma mark - BDJMenuView代理
+- (void)menuView:(BDJMenuView *)menuView didClickBtnAtIndex:(NSInteger)index {
+    //获取视图控制器
+    UIViewController *vc = self.ctrlArray[index];
+    
+    //向右滑动
+    UIPageViewControllerNavigationDirection dir = UIPageViewControllerNavigationDirectionForward;
+    if (index < self.curPageIndex) {
+        //向左滑动
+        dir = UIPageViewControllerNavigationDirectionReverse;
+    }
+    self.curPageIndex = index;
+    
+    [self.pageCtrl setViewControllers:@[vc] direction:dir animated:YES completion:nil];
+}
+
+- (void)menuView:(BDJMenuView *)menuView didClickRightBtn:(MenuType)type {
+    NSLog(@"点击了右边按钮");
 }
 
 @end

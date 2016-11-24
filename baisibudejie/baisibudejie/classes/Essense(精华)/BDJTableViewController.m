@@ -73,12 +73,11 @@
     [ProgressHUD show:@"正在下载" Interaction: NO];
     
     
-    NSString *urlString = [NSString stringWithFormat:@"%@/bs0315-iphone-4.3/%@-20.json", self.url,self.np];
+    NSString *urlString = [NSString stringWithFormat:@"%@/bs0315-iphone-4.3/%@-20.json", self.url, self.np];
     
     [BDJDownloader downloadWithURLString:urlString success:^(NSData *data) {
         BDJEssenceModel *model = [[BDJEssenceModel alloc] initWithData:data error:nil];
         //        NSLog(@"=====");
-        
         
         if (self.np.integerValue == 0) {
             //第一页

@@ -33,6 +33,8 @@
     
     //获取菜单数据
     [self loadMenuData];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 
@@ -49,7 +51,6 @@
         //显示
         [self showAllMenuData:menu];
     }
-    
     
     //更新菜单数据
     [self downloadMenuData];
@@ -77,7 +78,6 @@
         
         //存到本地
         [data writeToFile:path atomically:YES];
-        
         
     } fail:^(NSError *error) {
         NSLog(@"%@", error);

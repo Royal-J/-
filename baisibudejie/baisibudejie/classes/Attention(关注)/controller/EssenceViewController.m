@@ -17,7 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.righrImageName = @"navigationButtonRandom_26x26_";
+    self.righrHLImageName = @"navigationButtonRandomClick_26x26_";
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
