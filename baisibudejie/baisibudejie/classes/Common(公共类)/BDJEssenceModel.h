@@ -11,6 +11,8 @@
 @class BDJEssenceInfo;
 @class BDJEssenceUser;
 @class BDJEssenceVideo;
+@class BDJEssenceImage;
+@class BDJEssenceAudio;
 
 @protocol BDJEssenceDetail;
 @protocol BDJEssenceTag;
@@ -53,8 +55,14 @@
 @property (nonatomic, copy)NSString<Optional> *type;
 @property (nonatomic, strong)BDJEssenceUser<Optional> *u;
 @property (nonatomic, copy)NSString<Optional> *up;
+//视频数据
 @property (nonatomic, strong)BDJEssenceVideo<Optional> *video;
 
+//图片数据 ---- 因为就video和image的数据不同，把其余相同的写在一起
+@property (nonatomic, strong)BDJEssenceImage<Optional> *image;
+
+//声音数据
+@property (nonatomic, strong)BDJEssenceAudio<Optional> *audio;
 
 //用来设置和获取对应cell的高度
 @property (nonatomic, strong)NSNumber<Optional> *cellHeight;
@@ -118,6 +126,38 @@
 @property (nonatomic, copy)NSArray<NSString, Optional> *thumbnail;
 @property (nonatomic, copy)NSArray<NSString, Optional> *thumbnail_small;
 @property (nonatomic, copy)NSArray<NSString, Optional> *video;
+@property (nonatomic, strong)NSNumber<Optional> *width;
+
+@end
+
+
+
+//图片的特殊数据
+@interface BDJEssenceImage : JSONModel
+
+@property (nonatomic, strong)NSArray<Optional, NSString> *big;
+@property (nonatomic, strong)NSArray<Optional, NSString> *download_url;
+@property (nonatomic, strong)NSNumber<Optional> *height;
+@property (nonatomic, strong)NSArray<Optional, NSString> *medium;
+@property (nonatomic, strong)NSArray<Optional, NSString> *small;
+@property (nonatomic, strong)NSArray<Optional, NSString> *thumbnail_small;
+@property (nonatomic, strong)NSNumber<Optional> *width;
+
+@end
+
+
+
+//声音的特殊数据
+@interface BDJEssenceAudio : JSONModel
+
+@property (nonatomic, strong)NSArray<Optional, NSString> *audio;
+@property (nonatomic, strong)NSArray<Optional, NSString> *download_url;
+@property (nonatomic, strong)NSNumber<Optional> *duration;
+@property (nonatomic, strong)NSNumber<Optional> *height;
+@property (nonatomic, strong)NSNumber<Optional> *playcount;
+@property (nonatomic, strong)NSNumber<Optional> *playfcount;
+@property (nonatomic, strong)NSArray<Optional, NSString> *thumbnail;
+@property (nonatomic, strong)NSArray<Optional, NSString> *thumbnail_small;
 @property (nonatomic, strong)NSNumber<Optional> *width;
 
 @end

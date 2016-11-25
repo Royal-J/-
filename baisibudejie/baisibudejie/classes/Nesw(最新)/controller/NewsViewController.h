@@ -6,8 +6,8 @@
 //  Copyright © 2016年 HJY. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BDJMenuViewController.h"
 
-@interface NewsViewController : UIViewController
+@interface NewsViewController : BDJMenuViewController
 
 @end

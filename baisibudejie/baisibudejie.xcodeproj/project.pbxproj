@@ -29,6 +29,12 @@
 		461E9FE81DE41F53006FEAD7 /* BDJEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FE71DE41F53006FEAD7 /* BDJEssenceModel.m */; };
 		461E9FEC1DE4346E006FEAD7 /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */; };
 		461E9FED1DE4346E006FEAD7 /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */; };
+		463A4BF51DE80FD4002316FB /* EssenceImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 463A4BF31DE80FD4002316FB /* EssenceImageCell.m */; };
+		463A4BF61DE80FD4002316FB /* EssenceImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463A4BF41DE80FD4002316FB /* EssenceImageCell.xib */; };
+		463A4BFA1DE814AA002316FB /* EssenceTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 463A4BF81DE814AA002316FB /* EssenceTextCell.m */; };
+		463A4BFB1DE814AA002316FB /* EssenceTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463A4BF91DE814AA002316FB /* EssenceTextCell.xib */; };
+		463A4BFF1DE82591002316FB /* EssenceAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 463A4BFD1DE82591002316FB /* EssenceAudioCell.m */; };
+		463A4C001DE82591002316FB /* EssenceAudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463A4BFE1DE82591002316FB /* EssenceAudioCell.xib */; };
 		4685B3651DE57A230091C513 /* BDJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685B3641DE57A230091C513 /* BDJMenu.m */; };
 		4685B3681DE586610091C513 /* BDJMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685B3671DE586610091C513 /* BDJMenuViewController.m */; };
 		4685B36B1DE5882C0091C513 /* BDJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685B36A1DE5882C0091C513 /* BDJTableViewController.m */; };
@@ -344,6 +350,15 @@
 		461E9FE91DE4346E006FEAD7 /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceVideoCell.h; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.h"; sourceTree = SOURCE_ROOT; };
 		461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceVideoCell.m; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.m"; sourceTree = SOURCE_ROOT; };
 		461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EssenceVideoCell.xib; path = "baisibudejie/classes/Common(公共类)/EssenceVideoCell.xib"; sourceTree = SOURCE_ROOT; };
+		463A4BF21DE80FD4002316FB /* EssenceImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceImageCell.h; path = "baisibudejie/classes/Common(公共类)/EssenceImageCell.h"; sourceTree = SOURCE_ROOT; };
+		463A4BF31DE80FD4002316FB /* EssenceImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceImageCell.m; path = "baisibudejie/classes/Common(公共类)/EssenceImageCell.m"; sourceTree = SOURCE_ROOT; };
+		463A4BF41DE80FD4002316FB /* EssenceImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EssenceImageCell.xib; path = "baisibudejie/classes/Common(公共类)/EssenceImageCell.xib"; sourceTree = SOURCE_ROOT; };
+		463A4BF71DE814AA002316FB /* EssenceTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceTextCell.h; path = "baisibudejie/classes/Common(公共类)/EssenceTextCell.h"; sourceTree = SOURCE_ROOT; };
+		463A4BF81DE814AA002316FB /* EssenceTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceTextCell.m; path = "baisibudejie/classes/Common(公共类)/EssenceTextCell.m"; sourceTree = SOURCE_ROOT; };
+		463A4BF91DE814AA002316FB /* EssenceTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EssenceTextCell.xib; path = "baisibudejie/classes/Common(公共类)/EssenceTextCell.xib"; sourceTree = SOURCE_ROOT; };
+		463A4BFC1DE82591002316FB /* EssenceAudioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceAudioCell.h; path = "baisibudejie/classes/Common(公共类)/EssenceAudioCell.h"; sourceTree = SOURCE_ROOT; };
+		463A4BFD1DE82591002316FB /* EssenceAudioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceAudioCell.m; path = "baisibudejie/classes/Common(公共类)/EssenceAudioCell.m"; sourceTree = SOURCE_ROOT; };
+		463A4BFE1DE82591002316FB /* EssenceAudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EssenceAudioCell.xib; path = "baisibudejie/classes/Common(公共类)/EssenceAudioCell.xib"; sourceTree = SOURCE_ROOT; };
 		4685B3631DE57A230091C513 /* BDJMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDJMenu.h; path = "baisibudejie/classes/Essense(精华)/BDJMenu.h"; sourceTree = SOURCE_ROOT; };
 		4685B3641DE57A230091C513 /* BDJMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDJMenu.m; path = "baisibudejie/classes/Essense(精华)/BDJMenu.m"; sourceTree = SOURCE_ROOT; };
 		4685B3661DE586610091C513 /* BDJMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDJMenuViewController.h; path = "baisibudejie/classes/Essense(精华)/BDJMenuViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -831,6 +846,15 @@
 		460FA6A11DE2C9BC00AB4CF9 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				463A4BFC1DE82591002316FB /* EssenceAudioCell.h */,
+				463A4BFD1DE82591002316FB /* EssenceAudioCell.m */,
+				463A4BFE1DE82591002316FB /* EssenceAudioCell.xib */,
+				463A4BF71DE814AA002316FB /* EssenceTextCell.h */,
+				463A4BF81DE814AA002316FB /* EssenceTextCell.m */,
+				463A4BF91DE814AA002316FB /* EssenceTextCell.xib */,
+				463A4BF21DE80FD4002316FB /* EssenceImageCell.h */,
+				463A4BF31DE80FD4002316FB /* EssenceImageCell.m */,
+				463A4BF41DE80FD4002316FB /* EssenceImageCell.xib */,
 				461E9FE91DE4346E006FEAD7 /* EssenceVideoCell.h */,
 				461E9FEA1DE4346E006FEAD7 /* EssenceVideoCell.m */,
 				461E9FEB1DE4346E006FEAD7 /* EssenceVideoCell.xib */,
@@ -1360,6 +1384,7 @@
 				46F5296C1DE6CA0600350CFC /* defaultUserIcon@3x.png in Resources */,
 				46F52A271DE6CA0600350CFC /* tabBar_new_icon.png in Resources */,
 				46F5293E1DE6CA0600350CFC /* AppIcon29x29@2x~ipad.png in Resources */,
+				463A4BF61DE80FD4002316FB /* EssenceImageCell.xib in Resources */,
 				46F52A0B1DE6CA0600350CFC /* pushguidemid@2x.png in Resources */,
 				46F52A251DE6CA0600350CFC /* tabBar_new_click_icon@2x.png in Resources */,
 				46F529A41DE6CA0600350CFC /* review_post_nav_icon_clickN_20x18_@1x.png in Resources */,
@@ -1450,6 +1475,7 @@
 				46F529621DE6CA0600350CFC /* cellmorebtnnormal_24x20_@1x.png in Resources */,
 				46F529601DE6CA0600350CFC /* cellmorebtnclickN_24x20_@2x.png in Resources */,
 				46F529971DE6CA0600350CFC /* post_placeholderImage@2x.png in Resources */,
+				463A4BFB1DE814AA002316FB /* EssenceTextCell.xib in Resources */,
 				46F529581DE6CA0600350CFC /* cellFollowDisableIcon@3x.png in Resources */,
 				46F52A211DE6CA0600350CFC /* tabBar_me_icon.png in Resources */,
 				46F529A81DE6CA0600350CFC /* see-big-picture-background.png in Resources */,
@@ -1495,6 +1521,7 @@
 				46F529661DE6CA0600350CFC /* cellmorebtnnormalN_24x20_@2x.png in Resources */,
 				46F52A2C1DE6CA0600350CFC /* tabBar_publish_click_icon@3x.png in Resources */,
 				46F529C41DE6CA0600350CFC /* friendsRecommentIcon-click.png in Resources */,
+				463A4C001DE82591002316FB /* EssenceAudioCell.xib in Resources */,
 				46F529491DE6CA0600350CFC /* AppIcon60x60@2x.png in Resources */,
 				46F529411DE6CA0600350CFC /* AppIcon40x40@2x.png in Resources */,
 				46F529D91DE6CA0600350CFC /* mine-setting-icon-click@2x.png in Resources */,
@@ -1693,6 +1720,9 @@
 				461E9FEC1DE4346E006FEAD7 /* EssenceVideoCell.m in Sources */,
 				460FAA631DE2D6B100AB4CF9 /* AddViewController.m in Sources */,
 				460FAA661DE2D6C500AB4CF9 /* AttentionViewController.m in Sources */,
+				463A4BFA1DE814AA002316FB /* EssenceTextCell.m in Sources */,
+				463A4BF51DE80FD4002316FB /* EssenceImageCell.m in Sources */,
+				463A4BFF1DE82591002316FB /* EssenceAudioCell.m in Sources */,
 				460FA6631DE2C7A500AB4CF9 /* main.m in Sources */,
 				460FAA751DE2D74100AB4CF9 /* BDJTabBarController.m in Sources */,
 				460FAA6C1DE2D6EA00AB4CF9 /* NewsViewController.m in Sources */,

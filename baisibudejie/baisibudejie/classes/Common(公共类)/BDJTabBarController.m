@@ -10,6 +10,7 @@
 #import "BDJTabBar.h"
 #import "BDJMenu.h"
 #import "EssenceViewController.h"
+#import "NewsViewController.h"
 
 @interface BDJTabBarController ()
 
@@ -98,10 +99,19 @@
 //显示菜单数据
 - (void)showAllMenuData:(BDJMenu *)menu {
     
-    //设置精华的菜单数据
+    //设置精华界面的菜单数据
     UINavigationController *essenceNavCtrl = [self.viewControllers firstObject];
     EssenceViewController *essenceCtrl = [essenceNavCtrl.viewControllers firstObject];
     essenceCtrl.subMenus = [[menu.menus firstObject] submenus];
+    
+    //设置最新界面的菜单数据
+    if (self.viewControllers.count >= 2) {
+        UINavigationController *newsNavCtrl = self.viewControllers[1];
+        NewsViewController *newsCtrl = [newsNavCtrl.viewControllers firstObject];
+        if (menu.menus.count >= 2) {
+            newsCtrl.subMenus = [menu.menus[1] submenus];
+        }
+    }
     
 }
 

@@ -9,6 +9,9 @@
 #import "BDJTableViewController.h"
 #import "BDJEssenceModel.h"
 #import "EssenceVideoCell.h"
+#import "EssenceImageCell.h"
+#import "EssenceTextCell.h"
+#import "EssenceAudioCell.h"
 
 @interface BDJTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -68,12 +71,15 @@
 //下载列表数据
 - (void)downloadListData {
     //http://s.budejie.com/topic/list/jingxuan/41/bs0315-iphone-4.3/0-20.json
+    //http://s.budejie.com/topic/list/jingxuan/41/
     
     //开始下载
     [ProgressHUD show:@"正在下载" Interaction: NO];
     
     
     NSString *urlString = [NSString stringWithFormat:@"%@/bs0315-iphone-4.3/%@-20.json", self.url, self.np];
+    
+//    NSLog(@"%@", urlString);
     
     [BDJDownloader downloadWithURLString:urlString success:^(NSData *data) {
         BDJEssenceModel *model = [[BDJEssenceModel alloc] initWithData:data error:nil];
@@ -156,6 +162,15 @@
     if ([detail.type isEqualToString:@"video"]) {
         //视频的cell
         cell = [EssenceVideoCell videoCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    }else if ([detail.type isEqualToString:@"image"]) {
+        //图片的cell
+        cell = [EssenceImageCell imageCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    }else if ([detail.type isEqualToString:@"text"]) {
+        //段子的cell
+        cell = [EssenceTextCell textCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    }else if ([detail.type isEqualToString:@"audio"]) {
+        //声音的cell
+        cell = [EssenceAudioCell audioCellForTableView:tableView atIndexPath:indexPath withModel:detail];
     }else{
         cell = [[UITableViewCell alloc] init];
     }
@@ -173,6 +188,5 @@
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 500;
 }
-
 
 @end
